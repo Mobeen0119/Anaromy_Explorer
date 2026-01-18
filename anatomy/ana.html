@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Atlas Anatomy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 style="color: antiquewhite;
+    font-variant-caps: all-petite-caps; justify-content: center;justify-self: center;">Click on Parts to get started
+    </h1>
+    <div class="diagram">
+        <img src="body.JPG" alt="Human Body" class="body-img">
+
+        <svg width="400" height="900" viewBox="0 0 400 900">
+    <!-- Head -->
+    <ellipse class="hotspot" id="head" cx="330" cy="80" rx="45" ry="55"></ellipse>
+
+    <!-- Neck -->
+    <rect class="hotspot" id="neck" x="308" y="150" width="50" height="30" rx="10"></rect>
+
+    <!-- Chest / Lungs -->
+    <ellipse class="hotspot" id="lungs" cx="338" cy="240" rx="60" ry="50"></ellipse>
+
+    <!-- Heart -->
+    <ellipse class="hotspot" id="heart" cx="339" cy="240" rx="25" ry="20"></ellipse>
+
+    <!-- Stomach -->
+    <ellipse class="hotspot" id="stomach" cx="339" cy="350" rx="50" ry="50"></ellipse>
+
+    <!-- Liver -->
+    <ellipse class="hotspot" id="liver" cx="340" cy="300" rx="50" ry="20"></ellipse>
+
+    <!-- Kidneys -->
+    <ellipse class="hotspot" id="left-kidney" cx="290" cy="360" rx="20" ry="25"></ellipse>
+    <ellipse class="hotspot" id="right-kidney" cx="300" cy="360" rx="20" ry="25"></ellipse>
+
+    <!-- Arms -->
+    <rect class="hotspot" id="left-arm" x="230" y="180" width="50" height="250" rx="20"></rect>
+    <rect class="hotspot" id="right-arm" x="380" y="180" width="50" height="200" rx="20"></rect>
+    <ellipse class="hotspot" id="ureter" cx="336" cy="460" rx="11" ry="20"></ellipse>
+
+        <ellipse class="hotspot" id="right-hand" cx="204" cy="500" rx="17" ry="28"></ellipse>
+    <ellipse class="hotspot" id="left-hand" cx="454" cy="480" rx="11" ry="20"></ellipse>
+
+        <ellipse class="hotspot" id="Knee" cx="393" cy="650" rx="16" ry="14"></ellipse>
+           <ellipse class="hotspot" id="Knee" cx="313" cy="650" rx="16" ry="14"></ellipse>
+ <ellipse class="hotspot" id="Mouth" cx="374" cy="129" rx="15" ry="8"></ellipse>
+<!-- Wrist -->
+            <ellipse class="hotspot" id="wrist" cx="210" cy="450" rx="16" ry="18"></ellipse>
+           <ellipse class="hotspot" id="wrist" cx="430" cy="419" rx="20" ry="19"></ellipse>
+
+            <ellipse class="hotspot" id="Hip" cx="270" cy="450" rx="16" ry="18"></ellipse>
+<ellipse class="hotspot" id="Hip" cx="380" cy="439" rx="20" ry="10"></ellipse>
+
+    <!-- Legs -->
+    <rect class="hotspot" id="left-leg" x="360" y="470" width="40" height="300" rx="20"></rect>
+    <rect class="hotspot" id="right-leg" x="290" y="470" width="40" height="300" rx="20"></rect>
+
+    <!-- Feet -->
+    <ellipse class="hotspot" id="left-foot" cx="320" cy="860" rx="25" ry="15"></ellipse>
+    <ellipse class="hotspot" id="right-foot" cx="380" cy="860" rx="25" ry="15"></ellipse>
+  </svg>
+    </div>
+
+    <div class="info">
+        <h2 id="organ-name">Select an organ</h2>
+        <p id="organ-info">Click on an organ to see more information.</p>
+    </div>
+    <div class="fact">
+        <h2>Did You Know?</h2>
+        <p>k</p>
+    </div>
+    <div class="normal">
+        <button>Reset</button>
+    </div>
+
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
